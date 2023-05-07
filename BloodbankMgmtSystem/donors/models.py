@@ -10,3 +10,7 @@ class Donors(models.Model):
   Address = models.CharField(max_length=255)
   Volumedonated = models.CharField(max_length=255)
   Dateofdonation = models.DateField()
+
+  def __str__(self):
+    return f"{self.Name} {self.BloodGroup}"
+
