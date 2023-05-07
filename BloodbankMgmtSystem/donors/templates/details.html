@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ mydonors.firstname }} {{ mydonors.lastname }}
+{% endblock %}
+
+
+{% block content %}
+  <h1>{{ mydonors.Name }}</h1>
+  <p>Phone Number: {{ mydonors.MobileNumber }}</p>
+  <p>Age: {{ mydonors.Age }}</p>
+  <p>Blood Group: {{ mydonors.BloodGroup }}</p>
+  <p>Address: {{ mydonors.Address }}</p>
+  <p>Volume of Blood Donated: {{ mydonors.Volumedonated }}</p>
+  <p>Donation Date: {{ mydonors.Dateofdonation }}</p>
+
+  <p>Back to <a href="/donors">Donors</a></p>
+
+{% endblock %}
